@@ -1,0 +1,198 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    background:linear-gradient(to bottom , #271f3e ,#ddd);
+    min-height: 100vh;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contaner {
+    width:100%;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; 
+    padding: 10px;
+}
+
+
+.logo h1 a{
+    font-size: 35px;
+    color:  #c0c3b8;
+    text-decoration: none;
+
+
+}
+.logo ul {
+   display: flex;
+   gap: 50px;
+   list-style: none;
+    
+
+}
+.logo ul li a {
+    color: #a7a9a0;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.logo ul li a:hover {
+    color: rgb(197, 23, 23);
+} 
+ 
+/* main */
+main {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 0;
+    margin: 100px 0;
+}
+/* image */
+.img {
+    flex: 1;
+    display: flex;
+    justify-content:flex-end;
+}
+.img img{
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.319);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.50);
+    margin-bottom: 150px;
+}
+/* contant */
+ 
+.contact {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+   
+    
+}
+#welcome  {
+    color: #c0c3b8;
+}
+
+.contact h2 {
+  font-size: 70px;
+  color:  #150544;
+
+}
+.contact h3 {
+    margin: 5px 0;
+}
+.contact p {
+    font-size: 18px;
+    margin: 5px 0 ;
+   
+}
+.contact p a {
+    color: #150544;
+    text-decoration: none;
+}
+
+i{
+    font-size: 15px;
+}
+.contact #icons {
+    width: 100%;
+    display: flex;
+}
+.contact img {
+    padding: 0 5px;
+    width: 45px;
+}
+
+
+
+@media (max-width:600px) {
+   .logo{
+    flex-direction: column;
+    width: 100%;
+   }
+   nav {
+    flex-direction: column;
+   }
+   #welcome {
+    color :#150544;
+   }
+   .logo ul {
+
+    gap: 50px;
+   }
+   .logo ul li {
+    margin: 40px 0;
+    width: 100%;
+
+
+   }
+   .logo ul li a{
+    font-size: 15px;
+   white-space: nowrap;
+    
+   }
+   .logo h1 {
+    font-size: 30px;
+   }
+   main {
+    flex-direction: column-reverse;
+    margin: 0;
+    gap: 20px;
+   }
+   .img img {
+    width: 200px;
+    height: 200px;
+   }
+   .contact p a {
+    color: #150544;
+    font-size: 15px;
+   }
+ 
+}
+
+@media (min-width:601px) and (max-width:900px) {
+
+    .logo {
+        width: 100%;
+    }
+    .logo ul {
+        gap: 25px;
+    }
+}
